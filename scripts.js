@@ -11,4 +11,12 @@ function slideshow () {
         }
 
     })
+    $('#prev').on('click' , function() {
+        if (slide != 0) {
+    $("img").hide()
+    $("img").attr('src', images [slide-1])
+    $("img").fadeIn(1200)
+    slide--;
+        }
+    })
 }
