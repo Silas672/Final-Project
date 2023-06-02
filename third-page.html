@@ -3,10 +3,16 @@
    <body>
     
 <head>
+   <!--Importing JQuery-->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
-  <h1> this is the third page of my app </h1>  
+ <!--title and details-->
+  <h1>  third page  </h1>  
+  <p>this is the third page of my app</p>
+  <p>it will show you cool pictures of spaceships</p>
+  <p></p>
 </head>
 <style>
+  /* style of background */
      body {
         background: rgba(15, 37, 109, 0.911);
         font-family: Arial, sans-serif;
@@ -16,6 +22,7 @@
   top: 200px;
 
     }
+    /* style of navigation*/
     nav {
 			background-color: #b9331b;
 			color: #fff;
@@ -27,20 +34,31 @@
 			text-decoration: none;
 			margin-right: 200px;
 		}
+    /* title of page*/
+    h1 {
+  position: absolute;
+  left: 600px;
+  top: -240px;
+}
 </style>
+<!--buttons for slideshow-->
 <button type="button" id="prev">prev</button>
 
 <button type="button" id="next">next</button>
 
 
-
+<!--first picture-->
 <img src="https://github.com/Silas672/Final-Project/blob/main/spaceship.jpg?raw=true", width= 1000, class="image">
+<!--navigating between pages-->
 <nav>
     <a href="index.html">home</a>
     <a href="second-page.html">back</a>
 </nav>
+<!--script get-->
 <script src="scripts.js"> </script>
-<script>var images = ["https://github.com/Silas672/Final-Project/blob/main/spaceship.jpg?raw=true",
+<script>
+/*My images*/
+var images = ["https://github.com/Silas672/Final-Project/blob/main/spaceship.jpg?raw=true",
             "https://github.com/Silas672/Final-Project/blob/main/spaceship-2.jpg?raw=true",
           "https://github.com/Silas672/Final-Project/blob/main/spaceship-3.jpg?raw=true",
         "https://github.com/Silas672/Final-Project/blob/main/spaceship-4.jpg?raw=true"];
